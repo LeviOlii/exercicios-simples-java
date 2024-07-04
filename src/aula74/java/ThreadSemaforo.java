@@ -5,10 +5,6 @@ public class ThreadSemaforo implements Runnable{
 	private CorSemaforo cor;
 	private boolean parar = false;
 	private int quantCiclos;
-	
-	final int constVermelho = 10;
-	final int constAmarelo = 4;
-	final int constVerde = 10;
 
 	public ThreadSemaforo(int quantCiclos) {
 		this.cor = CorSemaforo.VERMELHO;
